@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Email Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Generate Event Email</h1>
+        <form action="/generate" method="post">
+            <div>
+                <label for="event_name">Event Name:</label>
+                <input type="text" id="event_name" name="event_name" required>
+            </div>
+            <div>
+                <label for="start_date">Start Date:</label>
+                <input type="text" id="start_date" name="start_date" required>
+            </div>
+            <div>
+                <label for="end_date">End Date:</label>
+                <input type="text" id="end_date" name="end_date" required>
+            </div>
+            <div>
+                <label for="venue">Venue:</label>
+                <input type="text" id="venue" name="venue" required>
+            </div>
+            <div>
+                <label for="time">Time:</label>
+                <input type="text" id="time" name="time" required>
+            </div>
+            <button type="submit">Generate Email</button>
+        </form>
+    </div>
+</body>
+</html>
