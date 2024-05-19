@@ -3,13 +3,14 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Email Generator</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Offline Event Form</title>
+    <link rel="stylesheet" href="../static/offline_form.css">
 </head>
 <body>
     <div class="container">
-        <h1>Generate Event Email</h1>
+        <h1>Offline Event Mail</h1>
         <form action="/generate" method="post">
+            <input type="hidden" name="event_type" value="offline">
             <div>
                 <label for="event_name">Event Name:</label>
                 <input type="text" id="event_name" name="event_name" required>

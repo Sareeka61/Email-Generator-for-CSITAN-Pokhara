@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Online Event Form</title>
+    <link rel="stylesheet" href="../static/online_form.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Online Event Mail</h1>
+        <form action="/generate" method="post">
+            <input type="hidden" name="event_type" value="online">
+            <div>
+                <label for="event_name">Event Name:</label>
+                <input type="text" id="event_name" name="event_name" required>
+            </div>
+            <div>
+                <label for="start_date">Start Date:</label>
+                <input type="text" id="start_date" name="start_date" required>
+            </div>
+            <div>
+                <label for="end_date">End Date (Optional):</label>
+                <input type="text" id="end_date" name="end_date">
+            </div>
+            <div>
+                <label for="time">Time:</label>
+                <input type="text" id="time" name="time" required>
+            </div>
+            <div>
+                <label for="meet_link">Google Meet Link:</label>
+                <input type="text" id="meet_link" name="meet_link" required>
+            </div>
+            <button type="submit">Generate Email</button>
+        </form>
+    </div>
+</body>
+</html>
