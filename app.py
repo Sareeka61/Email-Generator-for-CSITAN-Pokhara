@@ -1,5 +1,5 @@
 from flask import Flask, request, render_template
-from mail import generate_email
+from mail import generate_email  # Import the generate_email function
 
 app = Flask(__name__)
 
@@ -11,7 +11,7 @@ def index():
 def generate():
     event_name = request.form['event_name']
     start_date = request.form['start_date']
-    end_date = request.form['end_date']
+    end_date = request.form.get('end_date', '')
     venue = request.form['venue']
     time = request.form['time']
 
